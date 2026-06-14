@@ -1,0 +1,95 @@
+t=2026-06-12T10:42:40+0530 lvl=info msg="no configuration paths supplied"
+t=2026-06-12T10:42:40+0530 lvl=info msg="using configuration at default config path" path="/Users/manikanta/Library/Application Support/ngrok/ngrok.yml"
+t=2026-06-12T10:42:40+0530 lvl=info msg="open config file" path="/Users/manikanta/Library/Application Support/ngrok/ngrok.yml" err=nil
+t=2026-06-12T10:42:40+0530 lvl=info msg="FIPS 140 mode" enabled=false
+t=2026-06-12T10:42:40+0530 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2026-06-12T10:42:41+0530 lvl=info msg="client session established" obj=tunnels.session
+t=2026-06-12T10:42:41+0530 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-06-12T10:42:41+0530 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:8080 url=https://foyer-propose-cramp.ngrok-free.dev
+t=2026-06-12T10:43:03+0530 lvl=info msg=start pg=/api/tunnels id=edd409921efe0d5c
+t=2026-06-12T10:43:03+0530 lvl=info msg=end pg=/api/tunnels id=edd409921efe0d5c status=200 dur=486.584µs
+t=2026-06-12T10:43:29+0530 lvl=info msg="join connections" obj=join id=a006b38d11d4 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59656
+t=2026-06-12T10:43:29+0530 lvl=info msg="join connections" obj=join id=eb7be6c53741 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59656
+t=2026-06-12T10:43:29+0530 lvl=info msg="join connections" obj=join id=01ccfafb76d1 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59656
+t=2026-06-12T10:43:29+0530 lvl=info msg="join connections" obj=join id=e923500f8b05 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59656
+t=2026-06-12T10:43:30+0530 lvl=info msg="join connections" obj=join id=3accb808f659 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59656
+t=2026-06-12T10:43:48+0530 lvl=info msg="join connections" obj=join id=cf90ff508c2e l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59656
+t=2026-06-12T10:43:48+0530 lvl=info msg="join connections" obj=join id=2cf866aab2e4 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59656
+t=2026-06-12T10:44:06+0530 lvl=info msg="join connections" obj=join id=7640195847be l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59661
+t=2026-06-12T10:44:06+0530 lvl=info msg="join connections" obj=join id=1726597b8b4c l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59661
+t=2026-06-12T10:44:06+0530 lvl=info msg="join connections" obj=join id=ccb7674acd8d l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59661
+t=2026-06-12T10:44:06+0530 lvl=info msg="join connections" obj=join id=296bf69c7f18 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59661
+t=2026-06-12T10:44:06+0530 lvl=info msg="join connections" obj=join id=cd8079b41797 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59661
+t=2026-06-12T10:45:02+0530 lvl=info msg="join connections" obj=join id=53bb7190968e l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:51846
+t=2026-06-12T10:45:15+0530 lvl=info msg="join connections" obj=join id=1e0eff7f3e05 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:49411
+t=2026-06-12T10:45:15+0530 lvl=info msg="join connections" obj=join id=727afbcbd6f1 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:49411
+t=2026-06-12T10:45:15+0530 lvl=info msg="join connections" obj=join id=30c6279cfe59 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:49411
+t=2026-06-12T10:45:16+0530 lvl=info msg="join connections" obj=join id=a32f5c36d3a4 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:49411
+t=2026-06-12T10:45:16+0530 lvl=info msg="join connections" obj=join id=07833b7b1107 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:49411
+t=2026-06-12T10:45:41+0530 lvl=info msg="join connections" obj=join id=3e259f685c07 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:47330
+t=2026-06-12T10:45:42+0530 lvl=info msg="join connections" obj=join id=7a59ec4bf262 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:47330
+t=2026-06-12T10:45:42+0530 lvl=info msg="join connections" obj=join id=f0429f1d7ed3 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:47330
+t=2026-06-12T10:45:42+0530 lvl=info msg="join connections" obj=join id=f37565bb6564 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:47330
+t=2026-06-12T10:45:42+0530 lvl=info msg="join connections" obj=join id=950ff1ce80c6 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:47330
+t=2026-06-12T10:45:58+0530 lvl=info msg="join connections" obj=join id=03b3ce3b12c7 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:47330
+t=2026-06-12T10:45:59+0530 lvl=info msg="join connections" obj=join id=a5f0e10855cc l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:47330
+t=2026-06-12T10:55:47+0530 lvl=eror msg="session closed, starting reconnect loop" obj=tunnels.session obj=csess id=637adcbbffdf err="read tcp [2401:4900:8939:f224:593c:4cb3:568a:7f2f]:49334->[2406:da1a:e91:9302:5f2c:118e:bcf2:c8bb]:443: read: connection reset by peer"
+t=2026-06-12T10:55:49+0530 lvl=info msg="client session established" obj=tunnels.session
+t=2026-06-12T10:55:49+0530 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-06-12T10:56:02+0530 lvl=eror msg="heartbeat timeout, terminating session" obj=tunnels.session obj=csess id=17eb1f1996fe clientid=4d716257ff5923c26ae5f0301e1509de
+t=2026-06-12T10:56:03+0530 lvl=info msg="join connections" obj=join id=17a6af1527bb l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:49473
+t=2026-06-12T10:57:23+0530 lvl=info msg="join connections" obj=join id=c4911fedf928 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:55104
+t=2026-06-12T10:58:18+0530 lvl=info msg="join connections" obj=join id=7bbe0d2bf2d7 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:55104
+t=2026-06-12T10:58:40+0530 lvl=info msg="join connections" obj=join id=d822d7b93170 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:55104
+t=2026-06-12T10:59:02+0530 lvl=info msg="join connections" obj=join id=cd191a703686 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:39566
+t=2026-06-12T10:59:03+0530 lvl=info msg="join connections" obj=join id=74996d6450ac l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:39566
+t=2026-06-12T11:01:37+0530 lvl=eror msg="heartbeat timeout, terminating session" obj=tunnels.session obj=csess id=dd5da0c0f6e2 clientid=4d716257ff5923c26ae5f0301e1509de
+t=2026-06-12T11:01:37+0530 lvl=eror msg="session closed, starting reconnect loop" obj=tunnels.session obj=csess id=637adcbbffdf err="session closed"
+t=2026-06-12T11:01:38+0530 lvl=info msg="client session established" obj=tunnels.session
+t=2026-06-12T11:01:38+0530 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-06-12T11:04:19+0530 lvl=info msg=start pg=/api/tunnels id=c6e9f6f115ed66b7
+t=2026-06-12T11:04:19+0530 lvl=info msg=end pg=/api/tunnels id=c6e9f6f115ed66b7 status=200 dur=23.756959ms
+t=2026-06-12T11:13:32+0530 lvl=eror msg="session closed, starting reconnect loop" obj=tunnels.session obj=csess id=637adcbbffdf err="read tcp [2401:4900:8939:f224:593c:4cb3:568a:7f2f]:49552->[2406:da1a:e91:9301:f1a3:66ed:d097:b95c]:443: read: connection reset by peer"
+t=2026-06-12T11:13:34+0530 lvl=info msg="client session established" obj=tunnels.session
+t=2026-06-12T11:13:34+0530 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-06-12T11:13:47+0530 lvl=eror msg="heartbeat timeout, terminating session" obj=tunnels.session obj=csess id=e8c87460b751 clientid=4d716257ff5923c26ae5f0301e1509de
+t=2026-06-12T11:49:10+0530 lvl=eror msg="session closed, starting reconnect loop" obj=tunnels.session obj=csess id=637adcbbffdf err="read tcp [2401:4900:8939:f224:593c:4cb3:568a:7f2f]:49610->[2406:da1a:e91:9302:6bbc:cc3d:8e60:4a99]:443: read: connection reset by peer"
+t=2026-06-12T11:49:11+0530 lvl=info msg="client session established" obj=tunnels.session
+t=2026-06-12T11:49:11+0530 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-06-12T12:06:55+0530 lvl=eror msg="session closed, starting reconnect loop" obj=tunnels.session obj=csess id=637adcbbffdf err="read tcp 192.168.1.11:49708->3.108.187.139:443: read: connection reset by peer"
+t=2026-06-12T12:06:56+0530 lvl=info msg="client session established" obj=tunnels.session
+t=2026-06-12T12:06:56+0530 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-06-12T12:06:59+0530 lvl=eror msg="heartbeat timeout, terminating session" obj=tunnels.session obj=csess id=433d0b736e42 clientid=4d716257ff5923c26ae5f0301e1509de
+t=2026-06-12T12:07:09+0530 lvl=eror msg="heartbeat timeout, terminating session" obj=tunnels.session obj=csess id=870c5e6e63ac clientid=4d716257ff5923c26ae5f0301e1509de
+t=2026-06-12T12:13:14+0530 lvl=eror msg="heartbeat timeout, terminating session" obj=tunnels.session obj=csess id=b628470cadd8 clientid=4d716257ff5923c26ae5f0301e1509de
+t=2026-06-12T12:13:14+0530 lvl=eror msg="session closed, starting reconnect loop" obj=tunnels.session obj=csess id=637adcbbffdf err="session closed"
+t=2026-06-12T12:13:15+0530 lvl=info msg="client session established" obj=tunnels.session
+t=2026-06-12T12:13:15+0530 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-06-12T12:17:08+0530 lvl=eror msg="heartbeat timeout, terminating session" obj=tunnels.session obj=csess id=cba0df20fe2f clientid=4d716257ff5923c26ae5f0301e1509de
+t=2026-06-12T12:17:08+0530 lvl=eror msg="session closed, starting reconnect loop" obj=tunnels.session obj=csess id=637adcbbffdf err="session closed"
+t=2026-06-12T12:17:10+0530 lvl=info msg="client session established" obj=tunnels.session
+t=2026-06-12T12:17:10+0530 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-06-12T12:17:26+0530 lvl=info msg="join connections" obj=join id=9201b2752c27 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59682
+t=2026-06-12T12:17:27+0530 lvl=info msg="join connections" obj=join id=3502b4ce2bc9 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59682
+t=2026-06-12T12:17:27+0530 lvl=info msg="join connections" obj=join id=ffc2098345de l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59682
+t=2026-06-12T12:17:27+0530 lvl=info msg="join connections" obj=join id=a9397c391118 l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59682
+t=2026-06-12T12:17:27+0530 lvl=info msg="join connections" obj=join id=114ef0d959dd l=[::1]:8080 r=[2401:4900:8939:f224:593c:4cb3:568a:7f2f]:59682
+t=2026-06-12T12:18:52+0530 lvl=info msg="join connections" obj=join id=1e7c94e2f8e3 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:52466
+t=2026-06-12T12:18:52+0530 lvl=info msg="join connections" obj=join id=73be1c1937e7 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:52466
+t=2026-06-12T12:18:52+0530 lvl=info msg="join connections" obj=join id=b0f1f6bb1885 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:52466
+t=2026-06-12T12:18:52+0530 lvl=info msg="join connections" obj=join id=6101b292b803 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:52466
+t=2026-06-12T12:18:52+0530 lvl=info msg="join connections" obj=join id=c439ea3464a0 l=[::1]:8080 r=[2401:4900:8939:f224:3304:f250:fc88:320c]:52466
+t=2026-06-12T12:20:59+0530 lvl=info msg="join connections" obj=join id=6bbe379e4261 l=[::1]:8080 r=[2401:4900:9786:ddb8:c404:59c1:99ce:ebd2]:37384
+t=2026-06-12T12:20:59+0530 lvl=info msg="join connections" obj=join id=3a47e7d7deb2 l=[::1]:8080 r=[2401:4900:9786:ddb8:c404:59c1:99ce:ebd2]:37384
+t=2026-06-12T12:20:59+0530 lvl=info msg="join connections" obj=join id=3ee72c932a0b l=[::1]:8080 r=[2401:4900:9786:ddb8:c404:59c1:99ce:ebd2]:37384
+t=2026-06-12T12:21:01+0530 lvl=info msg="join connections" obj=join id=5a3f1592c552 l=[::1]:8080 r=[2401:4900:9786:ddb8:c404:59c1:99ce:ebd2]:37384
+t=2026-06-12T12:21:01+0530 lvl=info msg="join connections" obj=join id=f575e8f1545c l=[::1]:8080 r=[2401:4900:9786:ddb8:c404:59c1:99ce:ebd2]:37384
+t=2026-06-12T12:23:18+0530 lvl=eror msg="heartbeat timeout, terminating session" obj=tunnels.session obj=csess id=aa3443edab21 clientid=4d716257ff5923c26ae5f0301e1509de
+t=2026-06-12T12:23:18+0530 lvl=eror msg="session closed, starting reconnect loop" obj=tunnels.session obj=csess id=637adcbbffdf err="session closed"
+t=2026-06-12T12:23:19+0530 lvl=info msg="client session established" obj=tunnels.session
+t=2026-06-12T12:23:19+0530 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-06-12T12:23:32+0530 lvl=info msg="join connections" obj=join id=49190ad85fd3 l=[::1]:8080 r=[2401:4900:9786:ddb8:c404:59c1:99ce:ebd2]:35042
+t=2026-06-12T12:57:53+0530 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2026-06-12T12:57:53+0530 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2026-06-12T12:57:53+0530 lvl=info msg="accept failed" obj=tunnels.session obj=csess id=637adcbbffdf err="reconnecting session closed"
+t=2026-06-12T12:57:53+0530 lvl=info msg="no more state changes" obj=tunnels.session

@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark EdX — Premium English Literacy Programs for Schools in Andhra Pradesh</title>
+    <meta name="description" content="Spark EdX delivers technology-driven, activity-based English literacy programs to schools across Andhra Pradesh. Empower students with reading, spelling, writing & communication skills.">
+    <meta name="keywords" content="English literacy, school programs, Andhra Pradesh, activity-based learning, Spark EdX, Narasaraopet">
+    <meta name="author" content="Spark EdX">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Spark EdX — Premium English Literacy Programs for Schools">
+    <meta property="og:description" content="Technology-driven, research-based English literacy programs transforming schools in Andhra Pradesh.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sparkedx.com">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['Outfit', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef5ff',
+                            100: '#d9e8ff',
+                            200: '#bbd7ff',
+                            300: '#8cbfff',
+                            400: '#559cff',
+                            500: '#2e75ff',
+                            600: '#1754f5',
+                            700: '#103ee1',
+                            800: '#1433b6',
+                            900: '#172f8f',
+                            950: '#111d57',
+                        },
+                        navy: {
+                            800: '#0f1b3d',
+                            900: '#0a1128',
+                            950: '#060b1a',
+                        },
+                        accent: {
+                            gold: '#f5a623',
+                            amber: '#f59e0b',
+                            cyan: '#06b6d4',
+                            emerald: '#10b981',
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        /* ===== BASE ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-family: 'Inter', sans-serif; }
+
+        /* ===== SCROLL REVEAL ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        /* ===== HERO PARTICLES ===== */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(10, 17, 40, 0.92) 0%, rgba(17, 29, 87, 0.88) 50%, rgba(15, 27, 61, 0.92) 100%);
+            z-index: 1;
+        }
+        .hero-bg-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        /* ===== FLOATING PARTICLES ===== */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: float-particle linear infinite;
+        }
+        @keyframes float-particle {
+            0% { transform: translateY(0) scale(1); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100vh) scale(0.3); opacity: 0; }
+        }
+
+        /* ===== GRADIENT TEXT ===== */
+        .gradient-text {
+            background: linear-gradient(135deg, #ffffff 0%, #bbd7ff 40%, #f5a623 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ===== GLOW BUTTON ===== */
+        .btn-glow {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
+            transform: rotate(45deg) translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+        .btn-glow:hover::before {
+            transform: rotate(45deg) translateX(0%);
+        }
+        .btn-glow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(46, 117, 255, 0.4);
+        }
+
+        /* ===== CARD HOVER ===== */
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        /* ===== GLASS CARD ===== */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* ===== COUNTER ANIMATION ===== */
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar-scrolled {
+            background: rgba(10, 17, 40, 0.95) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ===== PROBLEM CARD ICON ===== */
+        .problem-icon {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            font-size: 24px;
+        }
+
+        /* ===== SOLUTION STEP ===== */
+        .solution-step {
+            position: relative;
+        }
+        .solution-step::before {
+            content: '';
+            position: absolute;
+            left: 28px;
+            top: 60px;
+            bottom: -20px;
+            width: 2px;
+            background: linear-gradient(to bottom, rgba(46, 117, 255, 0.3), transparent);
+        }
+        .solution-step:last-child::before {
+            display: none;
+        }
+
+        /* ===== PROFILE RING ===== */
+        .profile-ring {
+            position: relative;
+        }
+        .profile-ring::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2e75ff, #f5a623);
+            z-index: -1;
+        }
+
+        /* ===== MODAL ===== */
+        .modal-overlay {
+            transition: opacity 0.3s ease;
+        }
+        .modal-content {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+        }
+        .modal-overlay.hidden .modal-content {
+            transform: scale(0.95) translateY(20px);
+            opacity: 0;
+        }
+
+        /* ===== WAVE DIVIDER ===== */
+        .wave-divider {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .wave-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 80px;
+        }
+
+        /* ===== MOBILE MENU ===== */
+        .mobile-menu {
+            transition: max-height 0.4s ease, opacity 0.3s ease;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .mobile-menu.open {
+            max-height: 400px;
+            opacity: 1;
+        }
+
+        /* ===== FORM INPUT FOCUS ===== */
+        .form-input:focus {
+            box-shadow: 0 0 0 3px rgba(46, 117, 255, 0.15);
+        }
+
+        /* ===== PULSE RING ===== */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 117, 255, 0.5); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(46, 117, 255, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 117, 255, 0); }
+        }
+        .pulse-ring { animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; }
+
+        /* ===== MARQUEE ===== */
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-track {
+            animation: marquee 30s linear infinite;
+        }
+    </style>
+</head>
+<body class="font-body bg-white text-gray-800 antialiased">
+
+    <!-- ======================= NAVIGATION ======================= -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" id="nav-logo" class="flex flex-col select-none group leading-none">
+                    <!-- Top Line: Spark -->
+                    <div class="flex items-center font-display font-bold text-2xl tracking-normal text-white">
+                        <span class="text-[#2e62e6] group-hover:text-[#4272f0] transition-colors">Sp</span>
+                        <!-- Custom Vector Flame -->
+                        <svg class="w-6 h-7 text-[#ef4444] fill-current mx-[0.5px]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.557 11.657c-.77-.77-1.81-1.25-2.55-2.02a18.665 18.665 0 0 1-2.08-2.6C12.5 5.5 12 3.5 12 2c0 2-.5 3.5-1.5 4.5a14.73 14.73 0 0 0-2 2.6c-.75.78-1.78 1.25-2.56 2.02C4.107 12.987 3 15.097 3 17c0 4.97 4.03 9 9 9s9-4.03 9-9c0-1.9-.107-4.013-3.443-5.343zM12 22c-2.76 0-5-2.24-5-5 0-1.04.4-1.95 1.05-2.65.65.7 1.56 1.15 2.65 1.15.7 0 1.25-.55 1.25-1.25 0-1.09-.45-2-1.15-2.65C11.5 11.2 12 11 12 11c1.66 0 3 1.34 3 3 0 .7-.25 1.35-.68 1.87.43-.52.68-1.17.68-1.87 0-1.66-1.34-3-3-3 0 0 .5.2 1.2.85.7.65 1.15 1.56 1.15 2.65 0 .7-.55 1.25-1.25 1.25-1.09 0-2-.45-2.65-1.15-.65.7-1.05 1.61-1.05 2.65 0 2.76 2.24 5 5 5z" />
+                        </svg>
+                        <span class="text-[#2e62e6] group-hover:text-[#4272f0] transition-colors">rk</span>
+                    </div>
+                    <!-- Bottom Line: EdX -->
+                    <div class="flex items-center font-display font-bold text-lg tracking-normal pl-5 mt-[-3px]">
+                        <span class="text-[#2e62e6] group-hover:text-[#4272f0] transition-colors">Ed</span>
+                        <!-- Custom Tech X -->
+                        <svg class="w-[14px] h-[14px] text-[#ef4444] fill-current ml-[2px] relative top-[1px]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 4h-3l-4 6-4-6H5l6 9-6 9h3l4-6 4 6h3l-6-9.5L19 4z" />
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-white hover:text-white text-sm font-medium transition-colors">Home</a>
+                    <a href="about.html" class="text-white/70 hover:text-white text-sm font-medium transition-colors">About Us</a>
+                    <a href="programs.html" class="text-white/70 hover:text-white text-sm font-medium transition-colors">Programs</a>
+                    <a href="blogs.html" class="text-white/70 hover:text-white text-sm font-medium transition-colors">Blogs</a>
+                    <a href="contact.html" class="bg-brand-600 hover:bg-brand-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all hover:shadow-lg hover:shadow-brand-500/30">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <button id="mobile-menu-btn" class="md:hidden text-white p-2" aria-label="Toggle navigation menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pb-6 space-y-3">
+                    <a href="index.html" class="block text-white hover:text-white text-sm font-medium py-2 transition-colors">Home</a>
+                    <a href="about.html" class="block text-white/70 hover:text-white text-sm font-medium py-2 transition-colors">About Us</a>
+                    <a href="programs.html" class="block text-white/70 hover:text-white text-sm font-medium py-2 transition-colors">Programs</a>
+                    <a href="blogs.html" class="block text-white/70 hover:text-white text-sm font-medium py-2 transition-colors">Blogs</a>
+                    <a href="contact.html" class="inline-block bg-brand-600 hover:bg-brand-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all mt-2">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================= BLOCK 1: HERO SECTION ======================= -->
+    <section id="hero" class="hero-section min-h-screen flex items-center relative">
+        <img src="assets/images/hero-bg.png" alt="" class="hero-bg-img" loading="eager" aria-hidden="true">
+
+        <!-- Animated Particles Container -->
+        <div id="particles-container" class="absolute inset-0 z-[1] pointer-events-none" aria-hidden="true"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
+            <div class="max-w-4xl">
+                <!-- Badge -->
+                <div class="reveal inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span>
+                    <span class="text-white/80 text-xs sm:text-sm font-medium tracking-wide">Trusted by Schools across Andhra Pradesh</span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="reveal reveal-delay-1 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.08] mb-6">
+                    <span class="gradient-text">Language for Life,</span><br>
+                    <span class="text-white">Skills for the Future.</span>
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="reveal reveal-delay-2 text-lg sm:text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
+                    Empowering students and enriching futures through technology-driven, research-based English literacy programs.
+                </p>
+
+                <!-- CTAs -->
+                <div class="reveal reveal-delay-3 flex flex-col sm:flex-row gap-4">
+                    <button id="hero-download-btn" onclick="openBrochureModal()" class="btn-glow inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-500 to-brand-600 text-white px-8 py-4 rounded-2xl text-base font-semibold shadow-xl shadow-brand-600/30">
+                        <i data-lucide="download" class="w-5 h-5"></i>
+                        Download Brochure
+                    </button>
+                    <a href="#contact" id="hero-contact-btn" class="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/15 border border-white/20 text-white px-8 py-4 rounded-2xl text-base font-semibold transition-all hover:border-white/40">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Request a Demo
+                    </a>
+                </div>
+
+                <!-- Trust Metrics -->
+                <div class="reveal reveal-delay-4 flex flex-wrap gap-8 sm:gap-12 mt-14">
+                    <div>
+                        <div class="stat-number font-display text-3xl sm:text-4xl font-bold text-white" data-target="150" data-suffix="+">0+</div>
+                        <div class="text-white/50 text-sm mt-1">Schools Partnered</div>
+                    </div>
+                    <div>
+                        <div class="stat-number font-display text-3xl sm:text-4xl font-bold text-white" data-target="50000" data-suffix="+">0+</div>
+                        <div class="text-white/50 text-sm mt-1">Students Impacted</div>
+                    </div>
+                    <div>
+                        <div class="stat-number font-display text-3xl sm:text-4xl font-bold text-white" data-target="13" data-suffix="">0</div>
+                        <div class="text-white/50 text-sm mt-1">Districts Covered</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,60 C200,100 400,0 600,60 C800,120 1000,20 1200,60 L1200,120 L0,120 Z" fill="#f8fafc"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ======================= BLOCK 2: THE PROBLEM ======================= -->
+    <section id="problem" class="py-20 md:py-28 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="reveal inline-flex items-center gap-2 bg-red-50 border border-red-100 rounded-full px-4 py-1.5 mb-5">
+                    <span class="text-red-500 text-xs font-semibold tracking-wider uppercase">The Challenge</span>
+                </div>
+                <h2 class="reveal reveal-delay-1 font-display text-3xl sm:text-4xl md:text-5xl font-bold text-navy-900 mb-5">
+                    Why Traditional Methods Are <span class="text-red-500">Falling Short</span>
+                </h2>
+                <p class="reveal reveal-delay-2 text-gray-500 text-lg leading-relaxed">
+                    Schools across Andhra Pradesh struggle with outdated rote-learning approaches that fail to build real English literacy skills in young learners.
+                </p>
+            </div>
+
+            <!-- Problem Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Problem Card 1 -->
+                <div class="reveal card-hover bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+                    <div class="problem-icon bg-red-50 text-red-500 mb-5">
+                        <i data-lucide="book-x" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-navy-900 mb-3">Rote Memorization Trap</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Students memorize words and sentences without understanding meaning, grammar, or context — creating an illusion of literacy.</p>
+                </div>
+
+                <!-- Problem Card 2 -->
+                <div class="reveal reveal-delay-1 card-hover bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+                    <div class="problem-icon bg-orange-50 text-orange-500 mb-5">
+                        <i data-lucide="mic-off" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-navy-900 mb-3">Zero Conversational Ability</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Students who score high on written tests cannot form basic English sentences in real conversations — a critical communication gap.</p>
+                </div>
+
+                <!-- Problem Card 3 -->
+                <div class="reveal reveal-delay-2 card-hover bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+                    <div class="problem-icon bg-yellow-50 text-yellow-600 mb-5">
+                        <i data-lucide="pen-off" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-navy-900 mb-3">Weak Spelling & Writing</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Without phonics-based or structural learning, students struggle with basic spelling patterns and free-form writing composition.</p>
+                </div>
+
+                <!-- Problem Card 4 -->
+                <div class="reveal reveal-delay-1 card-hover bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+                    <div class="problem-icon bg-purple-50 text-purple-500 mb-5">
+                        <i data-lucide="users-round" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-navy-900 mb-3">Untrained Teaching Staff</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Most schools lack specialized English literacy trainers, leaving generalist teachers to fill the gap with outdated textbook methods.</p>
+                </div>
+
+                <!-- Problem Card 5 -->
+                <div class="reveal reveal-delay-2 card-hover bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+                    <div class="problem-icon bg-blue-50 text-blue-500 mb-5">
+                        <i data-lucide="trending-down" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-navy-900 mb-3">Declining Parent Confidence</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Parents increasingly seek schools that deliver visible English fluency outcomes — schools that can't demonstrate progress lose enrollment.</p>
+                </div>
+
+                <!-- Problem Card 6 -->
+                <div class="reveal reveal-delay-3 card-hover bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+                    <div class="problem-icon bg-teal-50 text-teal-500 mb-5">
+                        <i data-lucide="laptop" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-navy-900 mb-3">No Technology Integration</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">While modern EdTech solutions prove effectiveness globally, most AP schools still rely entirely on chalk-and-talk instruction.</p>
+                </div>
+            </div>
+
+            <!-- Transition CTA -->
+            <div class="reveal text-center mt-14">
+                <a href="#solution" class="inline-flex items-center gap-2 text-brand-600 hover:text-brand-700 font-semibold text-base group transition-colors">
+                    See how Spark EdX solves this
+                    <i data-lucide="arrow-down" class="w-4 h-4 group-hover:translate-y-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= BLOCK 3: THE SOLUTION ======================= -->
+    <section id="solution" class="py-20 md:py-28 bg-white relative overflow-hidden">
+        <!-- Decorative Background -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-100/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-accent-gold/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" aria-hidden="true"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="reveal inline-flex items-center gap-2 bg-brand-50 border border-brand-100 rounded-full px-4 py-1.5 mb-5">
+                    <span class="text-brand-600 text-xs font-semibold tracking-wider uppercase">Our Solution</span>
+                </div>
+                <h2 class="reveal reveal-delay-1 font-display text-3xl sm:text-4xl md:text-5xl font-bold text-navy-900 mb-5">
+                    The Spark EdX <span class="text-brand-600">Learning System</span>
+                </h2>
+                <p class="reveal reveal-delay-2 text-gray-500 text-lg leading-relaxed">
+                    A structured, activity-based English literacy program that transforms how students learn to read, spell, write, and communicate — step by step.
+                </p>
+            </div>
+
+            <!-- Solution Feature Grid -->
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
+                <!-- Feature 1: Reading -->
+                <div class="reveal card-hover bg-gradient-to-br from-blue-50 to-white rounded-3xl p-8 border border-blue-100/50 shadow-sm">
+                    <div class="flex items-start gap-5">
+                        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-500 to-brand-600 flex items-center justify-center shadow-lg shadow-brand-500/20">
+                            <i data-lucide="book-open-check" class="w-7 h-7 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-xl text-navy-900 mb-2">Phonics-Based Reading</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-4">Students learn to decode words using systematic phonics instruction, building fluency from letter sounds to full sentences through guided practice.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-brand-100/60 text-brand-700 text-xs px-3 py-1 rounded-full font-medium">Letter Recognition</span>
+                                <span class="bg-brand-100/60 text-brand-700 text-xs px-3 py-1 rounded-full font-medium">Blending</span>
+                                <span class="bg-brand-100/60 text-brand-700 text-xs px-3 py-1 rounded-full font-medium">Sight Words</span>
+                                <span class="bg-brand-100/60 text-brand-700 text-xs px-3 py-1 rounded-full font-medium">Fluency Drills</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Spelling -->
+                <div class="reveal reveal-delay-1 card-hover bg-gradient-to-br from-emerald-50 to-white rounded-3xl p-8 border border-emerald-100/50 shadow-sm">
+                    <div class="flex items-start gap-5">
+                        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/20">
+                            <i data-lucide="spell-check" class="w-7 h-7 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-xl text-navy-900 mb-2">Structured Spelling Mastery</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-4">Pattern-based spelling activities with progressive difficulty levels ensure students internalize word structures, not just memorize individual words.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-emerald-100/60 text-emerald-700 text-xs px-3 py-1 rounded-full font-medium">Word Patterns</span>
+                                <span class="bg-emerald-100/60 text-emerald-700 text-xs px-3 py-1 rounded-full font-medium">Dictation</span>
+                                <span class="bg-emerald-100/60 text-emerald-700 text-xs px-3 py-1 rounded-full font-medium">Word Games</span>
+                                <span class="bg-emerald-100/60 text-emerald-700 text-xs px-3 py-1 rounded-full font-medium">Assessments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Writing -->
+                <div class="reveal card-hover bg-gradient-to-br from-amber-50 to-white rounded-3xl p-8 border border-amber-100/50 shadow-sm">
+                    <div class="flex items-start gap-5">
+                        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/20">
+                            <i data-lucide="pencil-ruler" class="w-7 h-7 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-xl text-navy-900 mb-2">Creative Writing Framework</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-4">From sentence construction to paragraph writing and creative expression — students learn to organize thoughts and communicate ideas with confidence.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-amber-100/60 text-amber-700 text-xs px-3 py-1 rounded-full font-medium">Sentence Building</span>
+                                <span class="bg-amber-100/60 text-amber-700 text-xs px-3 py-1 rounded-full font-medium">Paragraphs</span>
+                                <span class="bg-amber-100/60 text-amber-700 text-xs px-3 py-1 rounded-full font-medium">Story Writing</span>
+                                <span class="bg-amber-100/60 text-amber-700 text-xs px-3 py-1 rounded-full font-medium">Grammar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Communication -->
+                <div class="reveal reveal-delay-1 card-hover bg-gradient-to-br from-purple-50 to-white rounded-3xl p-8 border border-purple-100/50 shadow-sm">
+                    <div class="flex items-start gap-5">
+                        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center shadow-lg shadow-purple-500/20">
+                            <i data-lucide="messages-square" class="w-7 h-7 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-xl text-navy-900 mb-2">Spoken English & Communication</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-4">Interactive speaking activities, role-plays, and conversation drills build real-world communication confidence that goes beyond textbook answers.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-100/60 text-purple-700 text-xs px-3 py-1 rounded-full font-medium">Dialogues</span>
+                                <span class="bg-purple-100/60 text-purple-700 text-xs px-3 py-1 rounded-full font-medium">Role Play</span>
+                                <span class="bg-purple-100/60 text-purple-700 text-xs px-3 py-1 rounded-full font-medium">Pronunciation</span>
+                                <span class="bg-purple-100/60 text-purple-700 text-xs px-3 py-1 rounded-full font-medium">Presentations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Stack Highlight -->
+            <div class="reveal bg-gradient-to-r from-navy-900 via-brand-950 to-navy-900 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10">
+                    <div class="absolute top-4 right-8 w-64 h-64 border border-white/20 rounded-full"></div>
+                    <div class="absolute bottom-4 left-8 w-40 h-40 border border-white/20 rounded-full"></div>
+                </div>
+                <div class="relative grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="tablet-smartphone" class="w-8 h-8 text-accent-cyan"></i>
+                        </div>
+                        <h4 class="font-display font-bold text-lg mb-2">Tech-Enabled Learning</h4>
+                        <p class="text-white/60 text-sm leading-relaxed">Interactive digital modules with multimedia-rich content designed for classroom engagement.</p>
+                    </div>
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="bar-chart-3" class="w-8 h-8 text-accent-gold"></i>
+                        </div>
+                        <h4 class="font-display font-bold text-lg mb-2">Progress Tracking</h4>
+                        <p class="text-white/60 text-sm leading-relaxed">Data-driven dashboards let schools measure student progress and demonstrate outcomes to parents.</p>
+                    </div>
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="graduation-cap" class="w-8 h-8 text-accent-emerald"></i>
+                        </div>
+                        <h4 class="font-display font-bold text-lg mb-2">Teacher Training</h4>
+                        <p class="text-white/60 text-sm leading-relaxed">Comprehensive onboarding and continuous professional development for your teaching staff.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= INTERACTIVE BROCHURE PREVIEW ======================= -->
+    <section id="brochure-showcase" class="py-20 md:py-28 bg-white relative overflow-hidden">
+        <!-- Decorative Background -->
+        <div class="absolute top-1/2 left-0 w-80 h-80 bg-brand-50/50 rounded-full blur-3xl -translate-x-1/2 pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute top-1/3 right-0 w-[400px] h-[400px] bg-brand-100/10 rounded-full blur-3xl translate-x-1/2 pointer-events-none" aria-hidden="true"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="reveal inline-flex items-center gap-2 bg-brand-50 border border-brand-100 rounded-full px-4 py-1.5 mb-5">
+                    <span class="text-brand-600 text-xs font-semibold tracking-wider uppercase">Program Materials</span>
+                </div>
+                <h2 class="reveal reveal-delay-1 font-display text-3xl sm:text-4xl md:text-5xl font-bold text-navy-900 mb-5">
+                    Explore Our <span class="text-brand-600">Official Brochure</span>
+                </h2>
+                <p class="reveal reveal-delay-2 text-gray-500 text-lg leading-relaxed">
+                    Take an interactive look inside the Spark EdX program. Click on the pages to expand them in high resolution or request your physical copy.
+                </p>
+            </div>
+
+            <!-- Tabs / Controls -->
+            <div class="reveal flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
+                <button onclick="switchBrochurePage(1)" id="btn-brochure-1" class="w-full sm:w-auto px-6 py-3 rounded-2xl text-sm font-semibold transition-all shadow-md shadow-brand-500/10 border border-brand-200 bg-brand-600 text-white hover:scale-[1.02]">
+                    Program Overview & Highlights
+                </button>
+                <button onclick="switchBrochurePage(2)" id="btn-brochure-2" class="w-full sm:w-auto px-6 py-3 rounded-2xl text-sm font-semibold transition-all shadow-sm border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 hover:scale-[1.02]">
+                    About Spark EdX & Leadership
+                </button>
+            </div>
+
+            <!-- Brochure Display Container -->
+            <div class="reveal relative max-w-5xl mx-auto bg-slate-900/5 rounded-3xl p-3 md:p-5 shadow-xl border border-slate-100 bg-slate-50/50 backdrop-blur-sm">
+                <!-- Page 1 -->
+                <div id="brochure-view-1" class="transition-opacity duration-300">
+                    <div class="relative overflow-hidden rounded-2xl group cursor-zoom-in" onclick="openLightbox('assets/images/brochure-1.jpg')">
+                        <img src="assets/images/brochure-1.jpg" alt="Spark EdX Brochure - Page 1" class="w-full h-auto object-cover rounded-2xl border border-slate-200 shadow-lg transition-transform duration-500 group-hover:scale-[1.015]">
+                        <div class="absolute inset-0 bg-navy-950/45 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl">
+                            <span class="bg-white text-navy-900 px-5 py-3 rounded-2xl font-bold text-sm shadow-xl flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                                <i data-lucide="zoom-in" class="w-5 h-5 text-brand-600"></i> Click to Zoom / Expand
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page 2 -->
+                <div id="brochure-view-2" class="hidden transition-opacity duration-300">
+                    <div class="relative overflow-hidden rounded-2xl group cursor-zoom-in" onclick="openLightbox('assets/images/brochure-2.jpg')">
+                        <img src="assets/images/brochure-2.jpg" alt="Spark EdX Brochure - Page 2" class="w-full h-auto object-cover rounded-2xl border border-slate-200 shadow-lg transition-transform duration-500 group-hover:scale-[1.015]">
+                        <div class="absolute inset-0 bg-navy-950/45 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl">
+                            <span class="bg-white text-navy-900 px-5 py-3 rounded-2xl font-bold text-sm shadow-xl flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                                <i data-lucide="zoom-in" class="w-5 h-5 text-brand-600"></i> Click to Zoom / Expand
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="reveal text-center mt-12">
+                <button onclick="openBrochureModal()" class="btn-glow inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-500 to-brand-600 text-white px-8 py-4 rounded-2xl text-base font-semibold shadow-xl shadow-brand-600/30">
+                    <i data-lucide="download" class="w-5 h-5"></i>
+                    Request High-Res Digital Copy
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= BLOCK 4: INSTITUTIONAL BENEFITS ======================= -->
+    <section id="benefits" class="py-20 md:py-28 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="reveal inline-flex items-center gap-2 bg-emerald-50 border border-emerald-100 rounded-full px-4 py-1.5 mb-5">
+                    <span class="text-emerald-600 text-xs font-semibold tracking-wider uppercase">Institutional Value</span>
+                </div>
+                <h2 class="reveal reveal-delay-1 font-display text-3xl sm:text-4xl md:text-5xl font-bold text-navy-900 mb-5">
+                    Why Schools <span class="text-emerald-600">Choose Spark EdX</span>
+                </h2>
+                <p class="reveal reveal-delay-2 text-gray-500 text-lg leading-relaxed">
+                    Beyond curriculum — we empower your institution with brand value, teacher capability, and measurable academic outcomes.
+                </p>
+            </div>
+
+            <!-- Benefits Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Benefit 1 -->
+                <div class="reveal card-hover bg-white rounded-2xl p-7 shadow-sm border border-gray-100 text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-50 flex items-center justify-center mx-auto mb-5 group-hover:bg-brand-100 transition-colors">
+                        <i data-lucide="award" class="w-8 h-8 text-brand-600"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-navy-900 mb-3">School Brand Elevation</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Position your school as a progressive, English-proficiency-focused institution that parents actively seek out.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="reveal reveal-delay-1 card-hover bg-white rounded-2xl p-7 shadow-sm border border-gray-100 text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-50 flex items-center justify-center mx-auto mb-5 group-hover:bg-emerald-100 transition-colors">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-emerald-600"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-navy-900 mb-3">Structured Teacher Support</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Ready-made lesson plans, training workshops, and ongoing support ensure your teachers deliver with confidence.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="reveal reveal-delay-2 card-hover bg-white rounded-2xl p-7 shadow-sm border border-gray-100 text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-50 flex items-center justify-center mx-auto mb-5 group-hover:bg-amber-100 transition-colors">
+                        <i data-lucide="chart-no-axes-combined" class="w-8 h-8 text-amber-600"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-navy-900 mb-3">Measurable Academic Lift</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Clear progress metrics and assessment reports demonstrate tangible literacy gains to parents and stakeholders.</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="reveal reveal-delay-3 card-hover bg-white rounded-2xl p-7 shadow-sm border border-gray-100 text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-purple-50 flex items-center justify-center mx-auto mb-5 group-hover:bg-purple-100 transition-colors">
+                        <i data-lucide="users" class="w-8 h-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-navy-900 mb-3">Higher Enrollment Rates</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Schools with specialized English programs attract higher enrollment, improve retention, and command premium positioning.</p>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="reveal mt-16 bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="font-display text-3xl sm:text-4xl font-bold text-brand-600">93%</div>
+                        <div class="text-gray-500 text-sm mt-1">Parent Satisfaction Rate</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl sm:text-4xl font-bold text-emerald-600">2.5x</div>
+                        <div class="text-gray-500 text-sm mt-1">Reading Speed Improvement</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl sm:text-4xl font-bold text-amber-600">78%</div>
+                        <div class="text-gray-500 text-sm mt-1">Writing Accuracy Gain</div>
+                    </div>
+                    <div>
+                        <div class="font-display text-3xl sm:text-4xl font-bold text-purple-600">15%</div>
+                        <div class="text-gray-500 text-sm mt-1">Avg. Enrollment Uplift</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= BLOCK 5: LEADERSHIP & TRUST ======================= -->
+    <section id="leadership" class="py-20 md:py-28 bg-white relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-1/2 left-0 w-64 h-64 bg-brand-50/50 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="reveal inline-flex items-center gap-2 bg-brand-50 border border-brand-100 rounded-full px-4 py-1.5 mb-5">
+                    <span class="text-brand-600 text-xs font-semibold tracking-wider uppercase">Leadership</span>
+                </div>
+                <h2 class="reveal reveal-delay-1 font-display text-3xl sm:text-4xl md:text-5xl font-bold text-navy-900 mb-5">
+                    Meet the <span class="text-brand-600">Visionaries</span>
+                </h2>
+                <p class="reveal reveal-delay-2 text-gray-500 text-lg leading-relaxed">
+                    Driven by passion for education and deep regional expertise, our leadership team is committed to transforming English literacy across Andhra Pradesh.
+                </p>
+            </div>
+
+            <!-- Leadership Cards -->
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+                <!-- Leader 1: G V G Krishna -->
+                <div class="reveal card-hover bg-white rounded-3xl p-8 shadow-lg border border-gray-100 text-center">
+                    <div class="profile-ring w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
+                        <img src="assets/images/director-new.png" alt="G V G Krishna, Director of Spark EdX" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <h3 class="font-display font-bold text-2xl text-navy-900 mb-1">G V G Krishna</h3>
+                    <p class="text-brand-600 font-semibold text-sm mb-4">Director</p>
+                    <div class="w-12 h-0.5 bg-gradient-to-r from-brand-500 to-accent-gold mx-auto mb-4"></div>
+                    <p class="text-gray-500 text-sm leading-relaxed">An education industry veteran with over 15 years of experience in building transformative learning programs. Mr. Krishna drives the strategic vision and institutional partnerships for Spark EdX, ensuring the program meets the highest standards of academic excellence across Andhra Pradesh.</p>
+                    <div class="flex items-center justify-center gap-2 mt-5 text-gray-400 text-sm">
+                        <i data-lucide="map-pin" class="w-4 h-4"></i>
+                        <span>Narasaraopet, Andhra Pradesh</span>
+                    </div>
+                </div>
+
+                <!-- Leader 2: M. Abhiram Gupta -->
+                <div class="reveal reveal-delay-1 card-hover bg-white rounded-3xl p-8 shadow-lg border border-gray-100 text-center">
+                    <div class="profile-ring w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
+                        <img src="assets/images/academic-head-new.jpg" alt="M. Abhiram Gupta, Academic Head of Spark EdX" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <h3 class="font-display font-bold text-2xl text-navy-900 mb-1">M. Abhiram Gupta</h3>
+                    <p class="text-brand-600 font-semibold text-sm mb-4">Academic Head</p>
+                    <div class="w-12 h-0.5 bg-gradient-to-r from-brand-500 to-accent-gold mx-auto mb-4"></div>
+                    <p class="text-gray-500 text-sm leading-relaxed">A research-oriented academic leader specializing in early literacy development and curriculum design. Mr. Gupta oversees the pedagogical framework, teacher training modules, and continuous innovation of the Spark EdX program — blending global best practices with regional learning needs.</p>
+                    <div class="flex items-center justify-center gap-2 mt-5 text-gray-400 text-sm">
+                        <i data-lucide="map-pin" class="w-4 h-4"></i>
+                        <span>Narasaraopet, Andhra Pradesh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= BLOCK 6: CONVERSION FOOTER ======================= -->
+    <section id="contact" class="py-20 md:py-28 bg-navy-900 text-white relative overflow-hidden">
+        <!-- Decorative -->
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-600/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent-gold/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="reveal inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-5">
+                    <span class="text-white/80 text-xs font-semibold tracking-wider uppercase">Get Started</span>
+                </div>
+                <h2 class="reveal reveal-delay-1 font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-5">
+                    Ready to <span class="text-accent-gold">Transform</span> Your School?
+                </h2>
+                <p class="reveal reveal-delay-2 text-white/60 text-lg leading-relaxed">
+                    Connect with our team to explore how Spark EdX can elevate English literacy at your institution. Fill the form below and we'll respond within 24 hours.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-5 gap-12 lg:gap-16">
+                <!-- Contact Form (3 cols) -->
+                <div class="reveal lg:col-span-3">
+                    <form id="contact-form" class="space-y-5">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="school-name" class="block text-white/70 text-sm font-medium mb-2">School Name *</label>
+                                <input type="text" id="school-name" name="school_name" required
+                                    class="form-input w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-brand-500 transition-all"
+                                    placeholder="e.g., Sri Vidya Niketan">
+                            </div>
+                            <div>
+                                <label for="contact-name" class="block text-white/70 text-sm font-medium mb-2">Contact Person Name *</label>
+                                <input type="text" id="contact-name" name="contact_name" required
+                                    class="form-input w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-brand-500 transition-all"
+                                    placeholder="e.g., Dr. Ramesh Kumar">
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="mobile-number" class="block text-white/70 text-sm font-medium mb-2">Mobile Number *</label>
+                                <input type="tel" id="mobile-number" name="mobile" required pattern="[0-9]{10}"
+                                    class="form-input w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-brand-500 transition-all"
+                                    placeholder="e.g., 9876543210">
+                            </div>
+                            <div>
+                                <label for="location" class="block text-white/70 text-sm font-medium mb-2">Location in AP *</label>
+                                <input type="text" id="location" name="location" required
+                                    class="form-input w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-brand-500 transition-all"
+                                    placeholder="e.g., Guntur, Vijayawada">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-white/70 text-sm font-medium mb-2">Message <span class="text-white/30">(Optional)</span></label>
+                            <textarea id="message" name="message" rows="4"
+                                class="form-input w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-brand-500 transition-all resize-none"
+                                placeholder="Tell us about your school and requirements..."></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn"
+                            class="btn-glow w-full bg-gradient-to-r from-brand-500 to-brand-600 text-white px-8 py-4 rounded-2xl text-base font-semibold shadow-xl shadow-brand-600/30 flex items-center justify-center gap-3">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            <span id="submit-text">Submit Inquiry</span>
+                        </button>
+                    </form>
+
+                    <!-- Form Success Message -->
+                    <div id="form-success" class="hidden mt-6 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl p-6 text-center">
+                        <div class="w-14 h-14 rounded-full bg-emerald-500/20 flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="check-circle" class="w-8 h-8 text-emerald-400"></i>
+                        </div>
+                        <h4 class="font-display font-bold text-xl text-white mb-2">Thank You!</h4>
+                        <p class="text-white/60 text-sm">Your inquiry has been received. Our team will reach out to you within 24 hours.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info (2 cols) -->
+                <div class="reveal reveal-delay-1 lg:col-span-2 space-y-8">
+                    <!-- Direct Contact -->
+                    <div>
+                        <h3 class="font-display font-bold text-xl mb-5">Direct Contact</h3>
+                        <div class="space-y-4">
+                            <a href="mailto:info@sparkedx.com" id="contact-email" class="flex items-center gap-4 group hover:bg-white/5 rounded-xl p-3 -m-3 transition-colors">
+                                <div class="w-12 h-12 rounded-xl bg-brand-600/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-600/30 transition-colors">
+                                    <i data-lucide="mail" class="w-5 h-5 text-brand-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white/50 text-xs">Email Us</p>
+                                    <p class="text-white font-medium text-sm">info@sparkedx.com</p>
+                                </div>
+                            </a>
+                            <a href="tel:+919052581710" id="contact-phone-1" class="flex items-center gap-4 group hover:bg-white/5 rounded-xl p-3 -m-3 transition-colors">
+                                <div class="w-12 h-12 rounded-xl bg-emerald-600/20 flex items-center justify-center flex-shrink-0 group-hover:bg-emerald-600/30 transition-colors">
+                                    <i data-lucide="phone" class="w-5 h-5 text-emerald-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white/50 text-xs">Call Us</p>
+                                    <p class="text-white font-medium text-sm">+91 9052581710</p>
+                                </div>
+                            </a>
+                            <a href="tel:+919948203634" id="contact-phone-2" class="flex items-center gap-4 group hover:bg-white/5 rounded-xl p-3 -m-3 transition-colors">
+                                <div class="w-12 h-12 rounded-xl bg-emerald-600/20 flex items-center justify-center flex-shrink-0 group-hover:bg-emerald-600/30 transition-colors">
+                                    <i data-lucide="phone" class="w-5 h-5 text-emerald-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white/50 text-xs">Alternate Number</p>
+                                    <p class="text-white font-medium text-sm">+91 9948203634</p>
+                                </div>
+                            </a>
+                            <div class="flex items-center gap-4 p-3 -m-3">
+                                <div class="w-12 h-12 rounded-xl bg-amber-600/20 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="map-pin" class="w-5 h-5 text-amber-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white/50 text-xs">Location</p>
+                                    <p class="text-white font-medium text-sm">Narasaraopet, Andhra Pradesh, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Download -->
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                        <h4 class="font-display font-bold text-lg mb-3">Download Our Brochure</h4>
+                        <p class="text-white/50 text-sm mb-5">Get a detailed overview of the Spark EdX program, curriculum structure, and partnership model.</p>
+                        <button onclick="openBrochureModal()" id="footer-download-btn" class="w-full bg-accent-gold hover:bg-amber-500 text-navy-900 px-6 py-3.5 rounded-xl text-sm font-bold flex items-center justify-center gap-2 transition-colors">
+                            <i data-lucide="file-down" class="w-5 h-5"></i>
+                            Download Brochure (PDF)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 pt-8 border-t border-white/10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex flex-col select-none group leading-none">
+                    <!-- Top Line: Spark -->
+                    <div class="flex items-center font-display font-bold text-xl tracking-normal text-white">
+                        <span class="text-[#2e62e6] group-hover:text-[#4272f0] transition-colors">Sp</span>
+                        <!-- Custom Vector Flame -->
+                        <svg class="w-5 h-6 text-[#ef4444] fill-current mx-[0.5px]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.557 11.657c-.77-.77-1.81-1.25-2.55-2.02a18.665 18.665 0 0 1-2.08-2.6C12.5 5.5 12 3.5 12 2c0 2-.5 3.5-1.5 4.5a14.73 14.73 0 0 0-2 2.6c-.75.78-1.78 1.25-2.56 2.02C4.107 12.987 3 15.097 3 17c0 4.97 4.03 9 9 9s9-4.03 9-9c0-1.9-.107-4.013-3.443-5.343zM12 22c-2.76 0-5-2.24-5-5 0-1.04.4-1.95 1.05-2.65.65.7 1.56 1.15 2.65 1.15.7 0 1.25-.55 1.25-1.25 0-1.09-.45-2-1.15-2.65C11.5 11.2 12 11 12 11c1.66 0 3 1.34 3 3 0 .7-.25 1.35-.68 1.87.43-.52.68-1.17.68-1.87 0-1.66-1.34-3-3-3 0 0 .5.2 1.2.85.7.65 1.15 1.56 1.15 2.65 0 .7-.55 1.25-1.25 1.25-1.09 0-2-.45-2.65-1.15-.65.7-1.05 1.61-1.05 2.65 0 2.76 2.24 5 5 5z" />
+                        </svg>
+                        <span class="text-[#2e62e6] group-hover:text-[#4272f0] transition-colors">rk</span>
+                    </div>
+                    <!-- Bottom Line: EdX -->
+                    <div class="flex items-center font-display font-bold text-base tracking-normal pl-4 mt-[-2px]">
+                        <span class="text-[#2e62e6] group-hover:text-[#4272f0] transition-colors">Ed</span>
+                        <!-- Custom Tech X -->
+                        <svg class="w-[12px] h-[12px] text-[#ef4444] fill-current ml-[2px] relative top-[1px]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 4h-3l-4 6-4-6H5l6 9-6 9h3l4-6 4 6h3l-6-9.5L19 4z" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-white/30 text-xs">© 2026 Spark EdX. All rights reserved. Empowering schools across Andhra Pradesh.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= BROCHURE DOWNLOAD MODAL ======================= -->
+    <div id="brochure-modal" class="modal-overlay fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-navy-950/80 backdrop-blur-sm" onclick="closeBrochureModal()"></div>
+
+        <!-- Modal Content -->
+        <div class="modal-content relative bg-white rounded-3xl max-w-lg w-full p-8 shadow-2xl">
+            <!-- Close Button -->
+            <button onclick="closeBrochureModal()" id="modal-close-btn" class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors" aria-label="Close modal">
+                <i data-lucide="x" class="w-5 h-5 text-gray-500"></i>
+            </button>
+
+            <!-- Header -->
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-500 to-brand-600 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-brand-500/20">
+                    <i data-lucide="file-text" class="w-8 h-8 text-white"></i>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-navy-900 mb-2">Download Our Brochure</h3>
+                <p class="text-gray-500 text-sm">Enter your details below to receive the Spark EdX program brochure instantly.</p>
+            </div>
+
+            <!-- Brochure Form -->
+            <form id="brochure-form" class="space-y-4">
+                <div>
+                    <label for="brochure-name" class="block text-gray-600 text-sm font-medium mb-1.5">Your Name *</label>
+                    <input type="text" id="brochure-name" name="name" required
+                        class="form-input w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-800 placeholder:text-gray-400 text-sm focus:outline-none focus:border-brand-500 transition-all"
+                        placeholder="Enter your full name">
+                </div>
+                <div>
+                    <label for="brochure-school" class="block text-gray-600 text-sm font-medium mb-1.5">School Name *</label>
+                    <input type="text" id="brochure-school" name="school" required
+                        class="form-input w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-800 placeholder:text-gray-400 text-sm focus:outline-none focus:border-brand-500 transition-all"
+                        placeholder="Enter your school name">
+                </div>
+                <div>
+                    <label for="brochure-phone" class="block text-gray-600 text-sm font-medium mb-1.5">Phone Number *</label>
+                    <input type="tel" id="brochure-phone" name="phone" required pattern="[0-9]{10}"
+                        class="form-input w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-800 placeholder:text-gray-400 text-sm focus:outline-none focus:border-brand-500 transition-all"
+                        placeholder="10-digit mobile number">
+                </div>
+                <button type="submit" id="brochure-submit-btn"
+                    class="btn-glow w-full bg-gradient-to-r from-brand-500 to-brand-600 text-white px-8 py-4 rounded-2xl text-base font-semibold shadow-xl shadow-brand-600/20 flex items-center justify-center gap-3 mt-2">
+                    <i data-lucide="download" class="w-5 h-5"></i>
+                    <span id="brochure-submit-text">Download Now</span>
+                </button>
+            </form>
+
+            <!-- Brochure Success State -->
+            <div id="brochure-success" class="hidden text-center py-4">
+                <div class="w-20 h-20 rounded-full bg-emerald-50 flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="check-circle-2" class="w-10 h-10 text-emerald-500"></i>
+                </div>
+                <h4 class="font-display font-bold text-xl text-navy-900 mb-2">Brochure Ready!</h4>
+                <p class="text-gray-500 text-sm mb-5">Thank you for your interest. Your download is starting automatically.</p>
+                <button onclick="closeBrochureModal()" class="text-brand-600 hover:text-brand-700 font-semibold text-sm transition-colors">Close this window</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================= LIGHTBOX MODAL ======================= -->
+    <div id="lightbox-modal" class="fixed inset-0 z-[150] hidden flex items-center justify-center p-4 bg-navy-950/90 backdrop-blur-md">
+        <!-- Backdrop close hook -->
+        <div id="lightbox-modal-bg" class="absolute inset-0 cursor-zoom-out"></div>
+        <!-- Close Button -->
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 z-[160] w-12 h-12 rounded-xl bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all" aria-label="Close image preview">
+            <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <!-- Lightbox Image Wrapper -->
+        <div class="relative max-w-5xl max-h-[85vh] z-10 overflow-hidden rounded-2xl shadow-2xl border border-white/10">
+            <img id="lightbox-img" src="" alt="Brochure Expanded View" class="w-full h-auto max-h-[85vh] object-contain">
+        </div>
+    </div>
+
+    <!-- ======================= JAVASCRIPT ======================= -->
+    <script src="js/main.js"></script>
+    <script src="js/google-form-handler.js"></script>
+</body>
+</html>
