@@ -442,6 +442,12 @@
                         </div>
                         <div class="grid sm:grid-cols-2 gap-5">
                             <div>
+                                <label for="contact-email" class="block text-white/70 text-sm font-medium mb-2">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" required
+                                    class="form-input w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-brand-500 transition-all"
+                                    placeholder="e.g., ramesh@example.com">
+                            </div>
+                            <div>
                                 <label for="mobile-number" class="block text-white/70 text-sm font-medium mb-2">Mobile Number *</label>
                                 <input type="tel" id="mobile-number" name="mobile" required pattern="[0-9]{10}"
                                     class="form-input w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-brand-500 transition-all"
@@ -590,6 +596,12 @@
                     <input type="text" id="brochure-name" name="name" required
                         class="form-input w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-800 placeholder:text-gray-400 text-sm focus:outline-none focus:border-brand-500 transition-all"
                         placeholder="Enter your full name">
+                </div>
+                <div>
+                    <label for="brochure-email" class="block text-gray-600 text-sm font-medium mb-1.5">Email Address *</label>
+                    <input type="email" id="brochure-email" name="email" required
+                        class="form-input w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-800 placeholder:text-gray-400 text-sm focus:outline-none focus:border-brand-500 transition-all"
+                        placeholder="Enter your email address">
                 </div>
                 <div>
                     <label for="brochure-school" class="block text-gray-600 text-sm font-medium mb-1.5">School Name *</label>
